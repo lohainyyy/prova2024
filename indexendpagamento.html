@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    
+</head>
+<body>
+    <section class="navega">
+    <img class="brics" src="Logotipo para maquiadora delicado rosa.png" alt="">
+</section>
+    
+<section>
+    <h1>endereço e informaçoes pessoais</h1></section>
+
+    <section class="boxmodel2">
+    <p>nome</p>
+    <p>cpf</p>
+    <p>telefone</p>
+    <p>e-mail</p>
+    <p>endereço</p>
+    <p>bairro</p>
+    <p>cidade</p>
+    <p>cep</p></section>
+
+<section>
+    <h1>pagamento</h1>
+</section>
+
+<section class="boxmodel2">
+    <p>cartão de credito</p>
+    <p>(visa) (elo) (mastercard)</p>
+    <p>cartão de debito</p>
+    <p>boleto</p>
+    <p>pix</p>
+    <p>dinheiro</p>
+    <p>Transferência bancária</p>
+    <p>carteira digital</p>
+
+</section>
+<div class="canvh">
+    <img class="canva" src="Logotipo para maquiadora delicado rosa.png" alt="">
+        <div class="saiu"><p>para mais informaçoes acesse nosso direct </p>
+        <p>instagram:lohainy_pinellistore</p>
+        <p>loja fisica:rua parigot de souza-0900-centro</p>
+        <p>CEP:87240-000 cianorte PR</p></div>
+        <a href='indexnos.html'><button>saiba mais sobre nós</button></a>
+    
+    </div>
+
+    <script>
+        function nextBlock(nextBlockId, progress) {
+        const currentBlock = document.querySelector('.block.active');
+        const inputs = currentBlock.querySelectorAll('input, select');
+        let isValid = true;
+        inputs.forEach(input => {
+        if (!input.value) {
+        isValid = false;
+        input.style.borderColor = 'red';
+        } else {
+        input.style.borderColor = '';
+        }
+        });
+        if (isValid) {
+        currentBlock.classList.remove('active');
+        
+        document.getElementById(nextBlockId).classList.add('active');
+        
+        updateProgressBar(progress);
+        }
+        }
+        function updateProgressBar(progress) {
+        document.getElementById('progressBar').style.width = progress +
+        '%';
+        }
+        function submitPayment() {
+        updateProgressBar(100);
+
+        alert('Pagamento realizado com sucesso!');
+}
+document.addEventListener('DOMContentLoaded', () => {
+const cartItemsContainer = document.getElementById('cart-items');
+const pagar = JSON.parse(localStorage.getItem('pagar')) || [];
+if (pagar.length === 0) {
+cartItemsContainer.innerText = 'O carrinho está vazio.';
+} else {
+pagar.forEach(produto => {
+const itemElemento = document.createElement('div');
+itemElemento.className = 'cart-item';
+itemElemento.innerText = `${produto.name} -
+
+$${produto.price}`;
+
+cartItemsContainer.appendChild(itemElemento);
+});
+}
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

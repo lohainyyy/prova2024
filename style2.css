@@ -1,0 +1,31 @@
+.navega{
+    background-color: black;
+}
+.brics{
+    width: 200px;
+    height: 200px;
+}
+
+
+.boxmodel2 {
+    width: 400px;
+    height: 300px;
+    background: rgb(255, 255, 255);
+    color: #000000;
+    padding: 6px;
+    border: 5px solid #CCC;
+}
+
+.canva{
+    width:500px ;
+    height: 500px;
+    padding-left: 30px;
+}
+.canvh{
+    display: flex;
+    background-color:#f5f5dc;
+}
+.saiu{
+    display: block;
+    padding-left: 900px;             
+}
